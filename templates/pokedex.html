@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="pokedex.css" />
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <div class="brand">
+                <a href="home.html" style="text-decoration: none;">
+                    <h1 class="app-name">Pokédex</h1>
+                </a>
+            </div>
+            <a href="home.html" class="btn primary-outline">Voltar para Home</a>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div id="loading" class="loading">🔄 Carregando Pokémons...</div>
+        <div id="pokemonGrid" class="grid">
+        </div>
+
+    </main>
+
+    <footer class="pokedex-footer">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Pokédex. Interface de Consumo de API.</p>
+        </div>
+    </footer>
+    <script src="/Backend/script.js"></script>
+</body>
+
+</html>

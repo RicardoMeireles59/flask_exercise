@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <div class="brand">
+                <a href="home.html" style="text-decoration: none;">
+                    <h1 class="app-name">Connext</h1>
+                </a>
+            </div>
+
+            <form>
+                <label for="email">E-mail</label>
+                <input type="email" id="emailLogin" placeholder="Digite seu e-mail" required />
+
+                <label for="password">Senha</label>
+                <div class="password-wrapper">
+                    <input type="password" id="passwordLogin" placeholder="Digite sua senha" required />
+                </div>
+
+                <button type="submit" class="btn primary" id="btEntrar">Entrar</button>
+
+                <p class="muted">
+                    <a href="cadastro.html">Criar conta</a>
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <script src="/Backend/script.js"></script>
+</body>
+
+</html>

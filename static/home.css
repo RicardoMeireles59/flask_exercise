@@ -1,0 +1,37 @@
+:root {
+    --bs-primary: #0057B8;
+    --bs-warning: #FFD700; 
+    --bs-body-bg: #f4f4f4;
+    --bs-font-sans-serif: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--bs-font-sans-serif);
+}
+
+.header-border-bottom {
+    border-bottom: 4px solid var(--bs-warning);
+}
+
+.btn-warning {
+    color: #333333 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--bs-warning);
+}
+
+.btn-pokemon-float {
+    z-index: 1050;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+@media (max-width: 576px) {
+    .btn-pokemon-float {
+        padding: 8px 12px;
+        font-size: 12px;
+        margin: 10px !important;
+    }
+}
