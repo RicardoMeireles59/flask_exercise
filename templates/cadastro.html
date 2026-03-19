@@ -17,12 +17,12 @@
     <main>
         <div class="card">
             <div class="brand">
-                <a href="home.html" style="text-decoration: none;">
+                <a href="{{ url_for('home') }}" style="text-decoration: none;">
                     <h1 class="app-name">Criar Conta</h1>
                 </a>
             </div>
 
-            <form id="formCadastro">
+            <form id="formCadastro" action="{{ url_for('login') }}">
                 <label for="nome">Nome Completo</label>
                 <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
 
@@ -39,10 +39,10 @@
 
                 <p id="erro" class="erro"></p>
 
-                <button type="submit" class="btn primary">Cadastrar</button>
+                <button type="submit" class="btn primary" onclick=def home>Cadastrar</button>
 
                 <p class="muted">
-                    Já tem uma conta? <a href="login.html">Fazer Login</a>
+                    Já tem uma conta? <a href="{{ url_for('login') }}">Fazer Login</a>
                 </p>
             </form>
         </div>

@@ -17,12 +17,12 @@
     <main>
         <div class="card">
             <div class="brand">
-                <a href="home.html" style="text-decoration: none;">
+                <a href="{{ url_for('home') }}" style="text-decoration: none;">
                     <h1 class="app-name">Connext</h1>
                 </a>
             </div>
 
-            <form>
+            <form action="{{ url_for('pokedex') }}" >
                 <label for="email">E-mail</label>
                 <input type="email" id="emailLogin" placeholder="Digite seu e-mail" required />
 
@@ -34,7 +34,7 @@
                 <button type="submit" class="btn primary" id="btEntrar">Entrar</button>
 
                 <p class="muted">
-                    <a href="cadastro.html">Criar conta</a>
+                    <a href="{{ url_for('cadastro') }}">Criar conta</a>
                 </p>
             </form>
         </div>

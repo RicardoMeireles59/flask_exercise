@@ -18,11 +18,11 @@
     <header class="navbar">
         <div class="container">
             <div class="brand">
-                <a href="home.html" style="text-decoration: none;">
+                <a href="{{ url_for('home') }}" style="text-decoration: none;">
                     <h1 class="app-name">Pokédex</h1>
                 </a>
             </div>
-            <a href="home.html" class="btn primary-outline">Voltar para Home</a>
+            <a href="{{ url_for('home') }}" class="btn primary-outline">Voltar para Home</a>
         </div>
     </header>
 
